@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scroll styling for better UI */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Global custom styles */
+html, body {
+  scroll-behavior: smooth;
+}
+
+/* Improved styling for code blocks */
+code {
+  @apply bg-gray-100 px-1 py-0.5 rounded text-sm font-mono;
+}
+
+pre {
+  @apply bg-gray-100 p-4 rounded-md overflow-auto;
+}
+
+/* Improve table styles */
+table {
+  @apply w-full border-collapse;
+}
+
+th {
+  @apply bg-gray-50 text-left p-3 font-semibold text-gray-600 border-b border-gray-200;
+}
+
+td {
+  @apply p-3 border-b border-gray-200;
+}
+
+/* Improve link styling */
+a:not(.no-style) {
+  @apply text-blue-600 hover:text-blue-800 transition-colors;
+}
+
+/* Gradient text styles */
+.gradient-text {
+  @apply bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-transparent bg-clip-text;
+}
+
+/* Card hover effects */
+.hover-card {
+  @apply transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg;
+}
+
+/* Improve blockquote styling */
+blockquote {
+  @apply border-l-4 border-gray-200 pl-4 py-2 my-4 text-gray-600 italic;
+}
+
+/* Improve markdown content */
+.markdown-content h2 {
+  @apply text-2xl font-bold text-gray-900 mt-8 mb-4;
+}
+
+.markdown-content h3 {
+  @apply text-xl font-semibold text-gray-900 mt-6 mb-3;
+}
+
+.markdown-content p {
+  @apply text-gray-700 mb-4;
+}
+
+.markdown-content ul, .markdown-content ol {
+  @apply pl-6 mb-4 text-gray-700;
+}
+
+.markdown-content ul {
+  @apply list-disc;
+}
+
+.markdown-content ol {
+  @apply list-decimal;
+}
