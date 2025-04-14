@@ -1,7 +1,7 @@
 <div align="center">
   <h2 align="center">✨ A2A 协议文档网站 ✨</h2>
   <p align="center">
-    <img src="assets/agent2agent_doc.gif" alt="A2A 网站横幅" width="600">
+    <img src="assets/banner.gif" alt="A2A 网站横幅" width="600">
   </p>
   <p>
       <a href="README.md">English</a> | <a href="README_zh.md">简体中文</a> | <a href="README_ja.md">日本語</a>
